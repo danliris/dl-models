@@ -8,8 +8,8 @@ module.exports = class Textile extends BaseModel {
 
         // Define properties
         this.code = '';
+        this.name = '';        
         this.description = '';
-
         this.copy(source);
     }
 }

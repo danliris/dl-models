@@ -10,7 +10,10 @@ else {
 
         data.should.have.property('code');
         data.code.should.instanceof(String);
-
+        
+        data.should.have.property('name');
+        data.code.should.instanceof(String);
+        
         data.should.have.property('description');
         data.description.should.instanceof(String);
     };
