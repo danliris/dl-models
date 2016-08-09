@@ -1,5 +1,7 @@
 module.exports = {
-    core:{
-        Accessories : 'accessories'
+    core: {
+        Fabric: 'fabrics',
+        Textile: 'textiles',
+        Accessories: 'accessories'
     }
 }
