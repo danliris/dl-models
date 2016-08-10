@@ -1,6 +1,6 @@
 var validate = require('./validator').core;
 
-it("#04. UoM should valid", function () {
+it("#05. UoM should valid", function () {
     var UoM = require('../src/core/UoM-docs').UoM;
     var UoM_Template = require('../src/core/UoM-docs').UoM_Template;
 
