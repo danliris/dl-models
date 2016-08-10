@@ -64,7 +64,7 @@ else {
 
         data.should.have.property('description');
         data.description.should.be.String();
-
+        
         data.should.have.property('UoM');
         data.UoM.should.instanceOf(Object);
         validateUoMDocs(data.UoM);
