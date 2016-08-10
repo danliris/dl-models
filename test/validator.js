@@ -13,10 +13,15 @@ else {
         data.code.should.instanceof(String);
 
         data.should.have.property('name');
-        data.code.should.instanceof(String);
+        data.name.should.instanceof(String);
 
         data.should.have.property('description');
         data.description.should.instanceof(String);
+
+        data.should.have.property('UoM');
+        data.UoM.should.instanceOf(Object);
+        validateUoMDocs(data.UoM);
+
     }
 
     var validateFabric = function (data) {
@@ -44,7 +49,6 @@ else {
         data.should.have.property('UoM');
         data.UoM.should.instanceOf(Object);
         validateUoMDocs(data.UoM);
-
     }
 
     var validateAccessories = function (data) {
@@ -59,6 +63,10 @@ else {
 
         data.should.have.property('description');
         data.description.should.be.String();
+
+        data.should.have.property('UoM');
+        data.UoM.should.instanceOf(Object);
+        validateUoMDocs(data.UoM);
     }
 
     var validateUoMDocs = function (data) {
