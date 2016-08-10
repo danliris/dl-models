@@ -22,21 +22,6 @@ else {
         data.UoM.should.instanceOf(Object);
         validateUoMDocs(data.UoM);
         
-        data.should.have.property('largeQuantity');
-        data.largeQuantity.should.be.Number();
-
-        data.should.have.property('largeUnit');
-        data.largeUnit.should.instanceof(String);
-
-        data.should.have.property('smallQuantity');
-        data.smallQuantity.should.be.Number();
-        
-        data.should.have.property('smallUnit');
-        data.smallUnit.should.instanceof(String);
-
-        data.should.have.property('isDefault');
-        data.isDefault.should.be.Boolean();
-        
     }
 
     var validateFabric = function (data) {

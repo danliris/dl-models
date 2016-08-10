@@ -12,11 +12,6 @@ module.exports = class Textile extends BaseModel {
         this.name = '';        
         this.description = '';
         this.UoM = new UoM();
-        this.largeQuantity=0;
-        this.largeUnit='';
-        this.smallQuantity=0;
-        this.smallUnit='';
-        this.isDefault=true;
         
         this.copy(source);
     }
