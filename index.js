@@ -5,7 +5,9 @@ module.exports = {
         Buyer: require('./src/core/buyer'),
         Supplier: require('./src/core/supplier'),
         Textile: require('./src/core/textile'),
-        Accessories: require('./src/core/accessories')
+        Accessories: require('./src/core/accessories'),
+        UoM: require('./src/core/UoM-docs').UoM,
+        UoM_Template: require('./src/core/UoM-docs').UoM_Template
     },
     map: require('./src/map'),
     validator: require('./test/validator')
