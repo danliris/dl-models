@@ -1,16 +1,14 @@
 var validate = require('./validator').core;
 
-it("#01. Accessories should valid", function(){
-    var Accessories = require('../src/core/accessories');
-    var UoM_Template = require('../src/core/UoM-docs').UoM_Template;
+it("#04. UoM should valid", function () {
     var UoM = require('../src/core/UoM-docs').UoM;
+    var UoM_Template = require('../src/core/UoM-docs').UoM_Template;
 
-    var accessories = new Accessories();
     var template = new UoM_Template({
         mainUnit: 'M',
         mainValue: 1,
         convertedUnit: 'M',
-        convertedValue: 1 
+        convertedValue: 1
     });
 
     var _units = [];
@@ -20,7 +18,5 @@ it("#01. Accessories should valid", function(){
         default: template,
         units: _units
     });
-
-    accessories.UoM = uom;
-    validate.accessories(accessories);
-})
+    validate.UoMDocs(uom);
+}) 
