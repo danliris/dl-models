@@ -3,7 +3,7 @@
 var BaseModel = require("capital-models").BaseModel;
 var UoM = require('./UoM').UoM;
 
-module.exports = class Textile extends BaseModel {
+module.exports = class GeneralMerchandise extends BaseModel {
     constructor(source) {
         super('general-merchandise', '1.0.0'); // call MongoModel constructor
 
