@@ -5,7 +5,8 @@ module.exports = {
         Accessories: 'accessories',
         Buyer: 'buyers',
         Supplier: 'suppliers',
-        Sparepart: 'sparepart',
-        UoM: 'unit-of-measurement'
+        UoM: 'unit-of-measurement',
+        Sparepart:'sparepart',
+        GeneralMerchandise:'general-merchandise'
     }
 }
