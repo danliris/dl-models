@@ -4,6 +4,26 @@ if (process.env.NODE_ENV == 'production') {
 else {
 
     var should = require('should');
+    
+    var validateSparepart = function (data) {
+        data.should.not.equal(null);
+        data.should.instanceof(Object);
+
+        data.should.have.property('code');
+        data.code.should.instanceof(String);
+
+        data.should.have.property('name');
+        data.name.should.instanceof(String);
+
+        data.should.have.property('description');
+        data.description.should.instanceof(String);
+
+        data.should.have.property('UoM');
+        data.UoM.should.instanceOf(Object);
+
+        validateUoMDocs(data.UoM);
+
+    }
 
     var validateTextile = function (data) {
         data.should.not.equal(null);
@@ -20,8 +40,8 @@ else {
 
         data.should.have.property('UoM');
         data.UoM.should.instanceOf(Object);
-        validateUoMDocs(data.UoM);
 
+        validateUoMDocs(data.UoM);
     }
 
     var validateFabric = function (data) {
@@ -48,6 +68,7 @@ else {
 
         data.should.have.property('UoM');
         data.UoM.should.instanceOf(Object);
+
         validateUoMDocs(data.UoM);
     }
 
@@ -66,6 +87,7 @@ else {
 
         data.should.have.property('UoM');
         data.UoM.should.instanceOf(Object);
+
         validateUoMDocs(data.UoM);
     }
 
@@ -109,6 +131,7 @@ else {
         fabric: validateFabric,
         textile: validateTextile,
         accessories: validateAccessories,
+        sparepart: validateSparepart,
         UoMDocs: validateUoMDocs
     }
 }

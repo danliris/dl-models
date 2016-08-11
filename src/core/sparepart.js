@@ -1,13 +1,12 @@
 'use strict'
 
 var BaseModel = require("capital-models").BaseModel;
-var UoM = require('./UoM').UoM;
+var UoM = require("./UoM").UoM;
 
-module.exports = class Textile extends BaseModel {
+module.exports = class Sparepart extends BaseModel {
     constructor(source) {
-        super('textile', '1.0.0'); // call MongoModel constructor
+        super('sparepart', '1.0.0');
 
-        // Define properties
         this.code = '';
         this.name = '';
         this.description = '';

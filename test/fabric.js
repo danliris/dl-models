@@ -10,11 +10,12 @@ it("#02. Fabric should valid", function () {
         mainUnit: 'M',
         mainValue: 1,
         convertedUnit: 'M',
-        convertedValue: 1 
+        convertedValue: 1
     });
 
     var _units = [];
     _units.push(template);
+
     var uom = new UoM({
         category: 'UoM-Unit-Test',
         default: template,

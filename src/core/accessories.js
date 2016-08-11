@@ -12,6 +12,7 @@ module.exports = class Accessories extends BaseModel{
         this.name = '';
         this.description = '';
         this.UoM = new UoM();
+
         this.copy(source);
     }
 }

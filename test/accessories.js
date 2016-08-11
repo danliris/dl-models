@@ -1,6 +1,6 @@
 var validate = require('./validator').core;
 
-it("#01. Accessories should valid", function(){
+it("#01. Accessories should valid", function () {
     var Accessories = require('../src/core/accessories');
     var UoM_Template = require('../src/core/UoM').UoM_Template;
     var UoM = require('../src/core/UoM').UoM;
@@ -10,7 +10,7 @@ it("#01. Accessories should valid", function(){
         mainUnit: 'M',
         mainValue: 1,
         convertedUnit: 'M',
-        convertedValue: 1 
+        convertedValue: 1
     });
 
     var _units = [];
