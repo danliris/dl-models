@@ -20,6 +20,7 @@ else {
 
         data.should.have.property('UoM');
         data.UoM.should.instanceOf(Object);
+
         validateUoMDocs(data.UoM);
 
     }
@@ -39,8 +40,8 @@ else {
 
         data.should.have.property('UoM');
         data.UoM.should.instanceOf(Object);
-        validateUoMDocs(data.UoM);
 
+        validateUoMDocs(data.UoM);
     }
 
     var validateFabric = function (data) {
@@ -67,6 +68,7 @@ else {
 
         data.should.have.property('UoM');
         data.UoM.should.instanceOf(Object);
+
         validateUoMDocs(data.UoM);
     }
 
@@ -85,6 +87,7 @@ else {
 
         data.should.have.property('UoM');
         data.UoM.should.instanceOf(Object);
+
         validateUoMDocs(data.UoM);
     }
 
@@ -140,7 +143,46 @@ else {
         data.should.have.property('UoM');
         data.UoM.should.instanceOf(Object);
         validateUoMDocs(data.UoM);
+    }
 
+    var validateBuyer = function (data) {
+        data.should.not.equal(null);
+        data.should.instanceOf(Object);
+
+        data.should.have.property('code');
+        data.code.should.instanceOf(String);
+
+        data.should.have.property('name');
+        data.name.should.instanceOf(String);
+
+        data.should.have.property('address');
+        data.address.should.instanceOf(String);
+        
+        data.should.have.property('contact');
+        data.contact.should.instanceOf(String);
+
+        data.should.have.property('tempo');
+        data.tempo.should.instanceOf(String);
+    }
+    
+    var validateSupplier = function (data) {
+        data.should.not.equal(null);
+        data.should.instanceOf(Object);
+
+        data.should.have.property('code');
+        data.code.should.instanceOf(String);
+
+        data.should.have.property('name');
+        data.name.should.instanceOf(String);
+
+        data.should.have.property('address');
+        data.address.should.instanceOf(String);
+        
+        data.should.have.property('contact');
+        data.contact.should.instanceOf(String);
+
+        data.should.have.property('import');
+        data.import.should.instanceOf(Boolean);
     }
 
     exports.core = {
@@ -149,6 +191,8 @@ else {
         accessories: validateAccessories,
         sparepart: validateSparepart,
         UoMDocs: validateUoMDocs,
-        generalMerchandise: validateGeneralMerchandise
+        generalMerchandise: validateGeneralMerchandise,
+        buyer: validateBuyer,
+        supplier: validateSupplier
     }
 }
