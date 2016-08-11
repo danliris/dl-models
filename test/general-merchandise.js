@@ -2,8 +2,8 @@ var validate = require('./validator').core;
 
 it("#03. General Merchandise should valid", function(){
     var GeneralMerchandise = require('../src/core/general-merchandise');
-    var UoM_Template = require('../src/core/UoM-docs').UoM_Template;
-    var UoM = require('../src/core/UoM-docs').UoM;
+    var UoM_Template = require('../src/core/UoM').UoM_Template;
+    var UoM = require('../src/core/UoM').UoM;
 
     var generalMerchandise = new GeneralMerchandise();
     var template = new UoM_Template({
