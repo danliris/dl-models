@@ -2,8 +2,8 @@ var validate = require('./validator').core;
 
 it("#01. Accessories should valid", function(){
     var Accessories = require('../src/core/accessories');
-    var UoM_Template = require('../src/core/UoM-docs').UoM_Template;
-    var UoM = require('../src/core/UoM-docs').UoM;
+    var UoM_Template = require('../src/core/UoM').UoM_Template;
+    var UoM = require('../src/core/UoM').UoM;
 
     var accessories = new Accessories();
     var template = new UoM_Template({

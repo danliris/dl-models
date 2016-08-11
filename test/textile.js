@@ -2,8 +2,8 @@ var validate = require('./validator').core;
 
 it("#03. Textile should valid", function(){
     var Textile = require('../src/core/textile');
-    var UoM_Template = require('../src/core/UoM-docs').UoM_Template;
-    var UoM = require('../src/core/UoM-docs').UoM;
+    var UoM_Template = require('../src/core/UoM').UoM_Template;
+    var UoM = require('../src/core/UoM').UoM;
 
     var textile = new Textile();
     var template = new UoM_Template({
