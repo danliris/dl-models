@@ -189,13 +189,9 @@ else {
         textile: validateTextile,
         accessories: validateAccessories,
         sparepart: validateSparepart,
-<<<<<<< HEAD
-        UoMDocs: validateUoMDocs
-=======
         UoMDocs: validateUoMDocs,
         generalMerchandise: validateGeneralMerchandise,
         buyer: validateBuyer,
         supplier: validateSupplier
->>>>>>> 9b2204afe7dd0ee701ac5d27950175fefba20662
     }
 }
