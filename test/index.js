@@ -9,3 +9,4 @@ test('@fabric', './fabric');
 test('@textile', './textile');
 test('@sparepart', './sparepart');
 test('@uom', './UoM-docs');
+test('@general-merchandise','./general-merchandise');

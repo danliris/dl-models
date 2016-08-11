@@ -123,12 +123,32 @@ else {
         data.should.have.property('convertedUnit');
         data.convertedUnit.should.instanceOf(String);
     }
+    
+    var validateGeneralMerchandise = function (data) {
+        data.should.not.equal(null);
+        data.should.instanceof(Object);
+
+        data.should.have.property('code');
+        data.code.should.instanceof(String);
+
+        data.should.have.property('name');
+        data.name.should.instanceof(String);
+
+        data.should.have.property('description');
+        data.description.should.instanceof(String);
+
+        data.should.have.property('UoM');
+        data.UoM.should.instanceOf(Object);
+        validateUoMDocs(data.UoM);
+
+    }
 
     exports.core = {
         fabric: validateFabric,
         textile: validateTextile,
         accessories: validateAccessories,
         sparepart: validateSparepart,
-        UoMDocs: validateUoMDocs
+        UoMDocs: validateUoMDocs,
+        generalMerchandise: validateGeneralMerchandise
     }
 }

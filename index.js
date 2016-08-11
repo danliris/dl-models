@@ -9,7 +9,8 @@ module.exports = {
         Accessories: require('./src/core/accessories'),
         Sparepart: require('./src/core/sparepart'),
         UoM: require('./src/core/UoM-docs').UoM,
-        UoM_Template: require('./src/core/UoM-docs').UoM_Template
+        UoM_Template: require('./src/core/UoM-docs').UoM_Template,
+        GeneralMerchandise: require('./src/core/general-merchandise')
     },
     map: require('./src/map'),
     validator: require('./test/validator')
