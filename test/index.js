@@ -4,11 +4,11 @@ var test = function (name, path) {
     })
 }
 
-// test('@accessories', './accessories');
-// test('@fabric', './fabric');
-// test('@textile', './textile');
-// test('@uom', './UoM');
+test('@accessories', './accessories');
+test('@fabric', './fabric');
+test('@textile', './textile');
+test('@uom', './UoM');
 test('@sparepart', './sparepart');
-// test('@general-merchandise','./general-merchandise');
-// test('@buyers', './buyer');
-// test('@suppliers', './supplier');
+test('@general-merchandise','./general-merchandise');
+test('@buyers', './buyer');
+test('@suppliers', './supplier');
