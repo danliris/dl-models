@@ -51,16 +51,17 @@ var validate = require('./validator').po;
 it("#06. PO Garment SparePart should valid", function () {
     var POGarmentSparepart = require('../src/po/PO-garment-sparepart');
     var Supplier = require('../src/core/supplier');
-    var UoM_Template = require('../src/core/UoM-docs').UoM_Template;
-    var UoM = require('../src/core/UoM-docs').UoM;
+    var UoM_Template = require('../src/core/UoM').UoM_Template;
+    var UoM = require('../src/core/UoM').UoM;
     var SparepartValue = require('../src/po/sparepart-value');
     var Sparepart = require('../src/core/sparepart');
 
     var pOGarmentSparepart = new POGarmentSparepart();
+    pOGarmentSparepart.RONo = '12333';
     pOGarmentSparepart.PRNo = '12333';
     pOGarmentSparepart.PONo = '126666';
     pOGarmentSparepart.ppn = 10;
-    pOGarmentSparepart.deliveryDate = Date.now();
+    pOGarmentSparepart.deliveryDate = new Date();
     pOGarmentSparepart.termOfPayment = 'Tempo 2 bulan';
     pOGarmentSparepart.deliveryFeeByBuyer = true;
     pOGarmentSparepart.PODLNo = '';
@@ -71,7 +72,7 @@ it("#06. PO Garment SparePart should valid", function () {
         name: 'hot',
         description: 'hotline',
         phone: '0812....',
-        address:'test',
+        address: 'test',
         local: true
     });
 
@@ -84,31 +85,31 @@ it("#06. PO Garment SparePart should valid", function () {
 
     var _units = [];
     _units.push(template);
-    var uom = new UoM({
+    
+    var _uom = new UoM({
         category: 'UoM-Unit-Test',
         default: template,
         units: _units
     });
 
     var sparepart = new Sparepart({
-        code : '22',
-        name : 'hotline',
-        description : 'hotline123',
-        uom :_uom
+        code: '22',
+        name: 'hotline',
+        description: 'hotline123',
+        UoM: _uom
     });
-
-    var _spareparts = [];
-    _spareparts.push(sparepart);
 
     var sparepartValue = new SparepartValue({
-        qty : 0,
+        qty: 0,
         unit: '',
-        price : 0,
-        sparepart :_spareparts
+        price: 0,
+        sparepart: sparepart
     });
+    var _spareparts = [];
+    _spareparts.push(sparepartValue);
 
     pOGarmentSparepart.supplier = supplier;
-    pOGarmentSparepart.items = sparepartValue;
+    pOGarmentSparepart.items = _spareparts;
     validate.POGarmentSparePart(pOGarmentSparepart);
 
 })

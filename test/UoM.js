@@ -1,11 +1,10 @@
 var validate = require('./validator').core;
 
-it("#03. Textile should valid", function () {
-    var Textile = require('../src/core/textile');
-    var UoM_Template = require('../src/core/UoM').UoM_Template;
-    var UoM = require('../src/core/UoM').UoM;
 
-    var textile = new Textile();
+it("#04. UoM should valid", function () {
+    var UoM = require('../src/core/UoM').UoM;
+    var UoM_Template = require('../src/core/UoM').UoM_Template;
+
     var template = new UoM_Template({
         mainUnit: 'M',
         mainValue: 1,
@@ -22,6 +21,6 @@ it("#03. Textile should valid", function () {
         units: _units
     });
 
-    textile.UoM = uom;
-    validate.textile(textile);
+    validate.UoMDocs(uom);
 })
+ 

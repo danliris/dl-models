@@ -1,5 +1,6 @@
 'use strict'
 var BaseModel = require('capital-models').BaseModel;
+var Sparepart = require('../core/sparepart');
 
 module.exports = class SparepartValue extends BaseModel {
     constructor(source) {
@@ -7,16 +8,7 @@ module.exports = class SparepartValue extends BaseModel {
         this.qty = 0;
         this.unit = '';
         this.price = 0;
-        this.sparepart = [];
-
+        this.sparepart = new Sparepart();
         this.copy(source);
-
-        // this.sparepartId = {};
-        var _sparepart = [];
-        for (var item of this._sparepart) {
-            _sparepart.push(new Sparepart(item));
-        }
-        this.sparepart = _sparepart;
     }
-
 }
