@@ -6,6 +6,10 @@ module.exports = {
         Buyer: 'buyers',
         Supplier: 'suppliers',
         UoM: 'unit-of-measurement',
-        Sparepart:'sparepart'
+        Sparepart:'sparepart',
+    },
+    po:{
+        SparepartValue:'sparepart-value',
+        POGarmentSparepart:'PO-garment-sparepart'
     }
 }
