@@ -7,7 +7,6 @@ module.exports = {
         Supplier: 'suppliers',
         UoM: 'unit-of-measurement',
         Sparepart:'sparepart',
-
         GeneralMerchandise:'general-merchandise'
     },
     po:{

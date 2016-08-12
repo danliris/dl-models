@@ -108,6 +108,70 @@ else {
         data.should.have.property('convertedUnit');
         data.convertedUnit.should.instanceOf(String);
     }
+    
+    var validateGeneralMerchandise = function (data) {
+        data.should.not.equal(null);
+        data.should.instanceof(Object);
+
+        data.should.have.property('code');
+        data.code.should.instanceof(String);
+
+        data.should.have.property('name');
+        data.name.should.instanceof(String);
+
+        data.should.have.property('description');
+        data.description.should.instanceof(String);
+        
+        data.should.have.property('price');
+        data.price.should.instanceof(Number);
+        
+        data.should.have.property('supplier');
+        data.supplier.should.instanceof(String);
+
+        data.should.have.property('UoM');
+        data.UoM.should.instanceOf(Object);
+        validateUoMDocs(data.UoM);
+    }
+
+    var validateBuyer = function (data) {
+        data.should.not.equal(null);
+        data.should.instanceOf(Object);
+
+        data.should.have.property('code');
+        data.code.should.instanceOf(String);
+
+        data.should.have.property('name');
+        data.name.should.instanceOf(String);
+
+        data.should.have.property('address');
+        data.address.should.instanceOf(String);
+        
+        data.should.have.property('contact');
+        data.contact.should.instanceOf(String);
+
+        data.should.have.property('tempo');
+        data.tempo.should.instanceOf(String);
+    }
+    
+    var validateSupplier = function (data) {
+        data.should.not.equal(null);
+        data.should.instanceOf(Object);
+
+        data.should.have.property('code');
+        data.code.should.instanceOf(String);
+
+        data.should.have.property('name');
+        data.name.should.instanceOf(String);
+
+        data.should.have.property('address');
+        data.address.should.instanceOf(String);
+        
+        data.should.have.property('contact');
+        data.contact.should.instanceOf(String);
+
+        data.should.have.property('import');
+        data.import.should.instanceOf(Boolean);
+    }
 
     var validateGeneralMerchandise = function (data) {
         data.should.not.equal(null);
@@ -249,12 +313,6 @@ var validateSparepart = function (data) {
         for (var item of data.items) {
             validateSparepartValue(item);
         }
-           
-        
-
-        // data.should.have.property('items');
-        // data.items.should.instanceof(Object);
-        // validateSparepart(data.items.sparepart);
     }
 
     exports.core = {
@@ -271,4 +329,3 @@ var validateSparepart = function (data) {
         POGarmentSparePart: validatePOGarmentSparePart
     }
 }
-

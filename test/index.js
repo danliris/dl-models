@@ -14,5 +14,3 @@ test('@buyers', './buyer');
 test('@suppliers', './supplier');
 test('@uom', './UoM');
 test('@POGarmentSparepart', './PO-garment-sparepart-test');
-
-
