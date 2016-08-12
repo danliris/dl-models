@@ -18,6 +18,7 @@ it("#06. PO Garment SparePart should valid", function () {
     pOGarmentSparepart.deliveryFeeByBuyer = true;
     pOGarmentSparepart.PODLNo = '';
     pOGarmentSparepart.description = 'SP1';
+    pOGarmentSparepart.supplierID = {};
 
     var supplier = new Supplier({
         code: '123',
