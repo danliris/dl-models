@@ -18,8 +18,11 @@ else {
         data.should.have.property('description');
         data.description.should.instanceof(String);
         
-        data.should.have.property('supplierName');
-        data.supplierName.should.instanceof(String);
+        data.should.have.property('supplierId');
+        data.supplierId.should.instanceof(Object);
+        
+        data.should.have.property('supplier');
+        data.supplier.should.instanceof(Object);
         
         data.should.have.property('price');
         data.price.should.instanceof(Number);
