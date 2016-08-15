@@ -1,6 +1,7 @@
 'use strict'
 var BaseModel = require('capital-models').BaseModel;
 var Supplier = require('../core/supplier');
+var SparepartValue = require('../po/sparepart-value');
 
 module.exports = class POGarmentSparepart extends BaseModel {
     constructor(source) {
