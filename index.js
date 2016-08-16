@@ -16,5 +16,5 @@ module.exports = {
         PurchaseOrder: require('./src/po/purchase-order')
     },
     map: require('./src/map'),
-    validator: require('./src/validator')
+    validator: require('./src/validator') 
 }
