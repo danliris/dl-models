@@ -16,7 +16,8 @@ module.exports = {
             Supplier: 'supplier',
             uom: 'unit-of-measurement',
             Currency: 'currency',
-            Vat: 'vat'
+            Vat: 'vat',
+            Budget: 'budget'
         },
         collection: {
             Buyer: 'buyers',
@@ -26,19 +27,22 @@ module.exports = {
             Unit: 'unit',
             Category: 'category',
             Currency: 'currency',
-            Vat: 'vat'
+            Vat: 'vat',
+            Budget: 'budgets'
         }
     },
     purchasing: {
         type: {
             PurchaseOrder: 'purchase-order',
             DeliveryOrder: 'delivery-order',
+            PurchaseRequest: 'purchase-request',
         },
         collection: {
             PurchaseOrder: 'purchase-orders',
             PurchaseOrderExternal: 'purchase-order-externals',
             DeliveryOrder: 'delivery-orders',
             UnitReceiptNote: 'unit-receipt-notes',
+            PurchaseRequest: 'purchase-requests',
         }
     }
 }

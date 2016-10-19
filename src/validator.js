@@ -13,13 +13,16 @@ module.exports = {
                 unit: require("./master/unit-validator"), 
                 category: require("./master/category-validator"),
                 currency: require("./master/currency-validator"), 
-                vat: require("./master/vat-validator")
+                vat: require("./master/vat-validator"),
+                budget: require('./master/budget-validator')
         },
         purchasing: {
                 purchaseOrder: require("./purchasing/purchase-order-validator"),
                 purchaseOrderItem: require("./purchasing/purchase-order-item-validator"),
                 purchaseOrderExternal: require("./purchasing/purchase-order-external-validator"),
                 deliveryOrder: require("./purchasing/delivery-order-validator"),
-                unitReceiptNote: require("./purchasing/unit-receipt-note-validator")
+                unitReceiptNote: require("./purchasing/unit-receipt-note-validator"),
+                purchaseRequest: require("./purchasing/purchase-request-validator"),
+                purchaseRequestItem: require("./purchasing/purchase-request-item-validator")
         }
 };
