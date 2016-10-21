@@ -36,6 +36,7 @@ module.exports = {
             PurchaseOrder: 'purchase-order',
             DeliveryOrder: 'delivery-order',
             PurchaseRequest: 'purchase-request',
+            UnitPaymentOrder:'unit-payment-order',
         },
         collection: {
             PurchaseOrder: 'purchase-orders',
@@ -43,6 +44,8 @@ module.exports = {
             DeliveryOrder: 'delivery-orders',
             UnitReceiptNote: 'unit-receipt-notes',
             PurchaseRequest: 'purchase-requests',
+            UnitPaymentPriceCorrectionNote:'unit-payment-price-correction-notes',
+            UnitPaymentOrder:'unit-payment-orders' 
         }
     }
 }

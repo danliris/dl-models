@@ -19,6 +19,7 @@ module.exports = class PurchaseRequest extends BaseModel {
         this.categoryId = {};
         this.category = {};
 
+        this.isPosted = false;
         this.remark = '';
 
         this.items = [];

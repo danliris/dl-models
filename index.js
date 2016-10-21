@@ -24,9 +24,13 @@ module.exports = {
         DeliveryOrderItem: require('./src/purchasing/delivery-order-item'),
         DeliveryOrderItemFulfillment: require('./src/purchasing/delivery-order-item-fulfillment'),
         UnitReceiptNote: require('./src/purchasing/unit-receipt-note'),
-        UnitReceiptNoteItem: require('./src/purchasing/unit-receipt-note-item'),
         PurchaseRequestItem: require('./src/purchasing/purchase-request-item'),
         PurchaseRequest: require('./src/purchasing/purchase-request'),
+        UnitReceiptNoteItem: require('./src/purchasing/unit-receipt-note-item'), 
+        UnitPaymentPriceCorrectionNote: require('./src/purchasing/unit-payment-price-correction-note'),
+        UnitPaymentPriceCorrectionNoteItem: require('./src/purchasing/unit-payment-price-correction-note-item'), 
+        UnitPaymentOrder: require('./src/purchasing/unit-payment-order'),
+        UnitPaymentOrderItem: require('./src/purchasing/unit-payment-order-item')
     },
     map: require('./src/map'),
     validator: require('./src/validator')
