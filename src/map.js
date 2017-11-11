@@ -236,8 +236,7 @@ module.exports = {
     },
     garmentMasterPlan: {
         collection: {
-            WeeklyPlan: 'weekly-plans',
-            WorkingHoursStandard: 'working-hours-standards'
+            WeeklyPlan: 'weekly-plans'
         }
     }
 }
