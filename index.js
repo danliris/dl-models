@@ -164,6 +164,19 @@ module.exports = {
         SewingBlockingPlanDetail: require('./src/garment-master-plan/sewing-blocking-plan-detail'),
         GarmentSection: require('./src/garment-master-plan/garment-section'),
     },
+    spMasterPlan: {
+        WeeklyPlan: require("./src/sp-master-plan/weekly-plan"),
+        WeeklyPlanItem: require("./src/sp-master-plan/weekly-plan-item"),
+        WorkingCapacitiesStandard: require('./src/sp-master-plan/working-capacities-standard'),
+        Style: require('./src/sp-master-plan/style'),
+        StandardCapacity: require('./src/sp-master-plan/standard-capacity'),
+        BookingOrder: require('./src/sp-master-plan/booking-order'),
+        BookingOrderItem: require('./src/sp-master-plan/booking-order-item'),
+        MasterPlanComodity: require('./src/sp-master-plan/master-plan-comodity'),
+        SpBlockingPlan: require('./src/sp-master-plan/sp-blocking-plan'),
+        SpBlockingPlanDetail: require('./src/sp-master-plan/sp-blocking-plan-detail'),
+        SpSection: require('./src/sp-master-plan/sp-section'),
+    },
     map: require('./src/map'),
     validator: require('./src/validator')
 }

@@ -249,5 +249,17 @@ module.exports = {
             SewingBlockingPlan: 'sewing-blocking-plans',
             GarmentSection : 'garment-sections',
         }
+    },
+    spMasterPlan: {
+        collection: {
+            WeeklyPlan: 'weekly-plans',
+            WorkingCapacitiesStandard: 'working-capacities-standards',
+            Style: 'styles',
+            StandardCapacity: 'standard-capacities',
+            BookingOrder: 'booking-orders',
+            MasterPlanComodity: 'master-plan-comodities',
+            SpBlockingPlan: 'sp-blocking-plans',
+            SpSection : 'sp-sections',
+        }
     }
 }
