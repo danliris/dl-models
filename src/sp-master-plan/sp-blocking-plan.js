@@ -1,16 +1,16 @@
 'use strict';
 var BaseModel = require('model-toolkit').BaseModel;
-var SewingBlockingPlanDetail = require('./sewing-blocking-plan-detail');
+var SpBlockingPlanDetail = require('./sp-blocking-plan-detail');
 
-module.exports = class SewingBlockingPlan extends BaseModel {
+module.exports = class SpBlockingPlan extends BaseModel {
     constructor(source, type) {
-        super(type || 'sewing-blocking-plan', '1.0.0');
+        super(type || 'sp-blocking-plan', '1.0.0');
         this.code = '';
         this.bookingOrderNo='';
         this.bookingOrderId={};
-        this.garmentBuyerId={};
-        this.garmentBuyerName='';
-        this.garmentBuyerCode='';
+        this.spBuyerId={};
+        this.spBuyerName='';
+        this.spBuyerCode='';
         this.quantity=0;
         this.bookingDate=new Date();
         this.deliveryDate=new Date();
@@ -21,6 +21,6 @@ module.exports = class SewingBlockingPlan extends BaseModel {
 
         this.copy(source);
 
-        this.details = (this.details || []).map(detail => new SewingBlockingPlanDetail(detail));
+        this.details = (this.details || []).map(detail => new SpBlockingPlanDetail(detail));
     }
 };

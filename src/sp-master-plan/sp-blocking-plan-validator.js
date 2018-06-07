@@ -1,5 +1,5 @@
 require("should");
-var validatorDetails = require('./sewing-blocking-plan-detail-validator');
+var validatorDetails = require('./sp-blocking-plan-detail-validator');
 var validatorBookingItems = require('./booking-order-item-validator');
 
 module.exports = function (data) {
@@ -15,14 +15,14 @@ module.exports = function (data) {
     data.should.have.property('bookingOrderId');
     data.bookingOrderId.should.instanceOf(Object);
     
-    data.should.have.property('garmentBuyerId');
-    data.garmentBuyerId.should.instanceOf(Object);
+    data.should.have.property('spBuyerId');
+    data.spBuyerId.should.instanceOf(Object);
     
-    data.should.have.property('garmentBuyerName');
-    data.garmentBuyerName.should.instanceOf(String);
+    data.should.have.property('spBuyerName');
+    data.spBuyerName.should.instanceOf(String);
     
-    data.should.have.property('garmentBuyerCode');
-    data.garmentBuyerCode.should.instanceOf(String);
+    data.should.have.property('spBuyerCode');
+    data.spBuyerCode.should.instanceOf(String);
     
     data.should.have.property('quantity');
     data.quantity.should.instanceOf(Number);

@@ -18,23 +18,23 @@ module.exports = function (data) {
     // data.style.should.instanceOf(Object);
     // validateStyle(data.style);
 
-    data.should.have.property('garmentBuyerId');
-    data.garmentBuyerId.should.instanceOf(Object);
+    data.should.have.property('spBuyerId');
+    data.spBuyerId.should.instanceOf(Object);
     
-    data.should.have.property('garmentBuyerName');
-    data.garmentBuyerName.should.be.String();
+    data.should.have.property('spBuyerName');
+    data.spBuyerName.should.be.String();
     
-    data.should.have.property('garmentBuyerCode');
-    data.garmentBuyerCode.should.be.String();
+    data.should.have.property('spBuyerCode');
+    data.spBuyerCode.should.be.String();
 
     data.should.have.property('masterplanComodityId');
-    data.garmentBuyerId.should.instanceOf(Object);
+    data.spBuyerId.should.instanceOf(Object);
     
     data.should.have.property('masterplanComodityName');
-    data.garmentBuyerName.should.be.String();
+    data.spBuyerName.should.be.String();
     
     data.should.have.property('masterplanComodityCode');
-    data.garmentBuyerCode.should.be.String();
+    data.spBuyerCode.should.be.String();
     
     data.should.have.property('shCutting');
     data.shCutting.should.instanceOf(Number);

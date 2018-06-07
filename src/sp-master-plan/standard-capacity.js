@@ -3,16 +3,16 @@ var BaseModel = require('model-toolkit').BaseModel;
 // var Style = require('./style');
 
 
-module.exports = class StandardHour extends BaseModel {
+module.exports = class StandardCapacity extends BaseModel {
     constructor(source, type) {
-        super(type || 'standard-hour', '1.0.0');
+        super(type || 'standard-capacity', '1.0.0');
         this.code = '';
         this.date = new Date();
         // this.styleId = {};
         // this.style = new Style();
-        this.garmentBuyerId={};
-        this.garmentBuyerName='';
-        this.garmentBuyerCode='';
+        this.spBuyerId={};
+        this.spBuyerName='';
+        this.spBuyerCode='';
         this.masterplanComodityId = {};
         this.masterplanComodityName='';
         this.masterplanComodityCode='';

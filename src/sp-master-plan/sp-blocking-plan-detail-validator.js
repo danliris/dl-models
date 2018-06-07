@@ -27,8 +27,8 @@ module.exports = function (data) {
     data.should.have.property('shCutting');
     data.shCutting.should.instanceOf(Number);
     
-    data.should.have.property('shSewing');
-    data.shSewing.should.instanceOf(Number);
+    data.should.have.property('shSp');
+    data.shSp.should.instanceOf(Number);
     
     data.should.have.property('shFinishing');
     data.shFinishing.should.instanceOf(Number);

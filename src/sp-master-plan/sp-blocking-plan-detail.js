@@ -3,12 +3,12 @@ var BaseModel = require('model-toolkit').BaseModel;
 var Unit = require('../master/unit');
 var Week = require('./weekly-plan-item');
 
-module.exports = class SewingBlockingPlanDetail extends BaseModel {
+module.exports = class SpBlockingPlanDetail extends BaseModel {
     constructor(source, type) {
-        super(type || 'sewing-blocking-plan-detail', '1.0.0');
+        super(type || 'sp-blocking-plan-detail', '1.0.0');
         this.code='';
         this.shCutting=0;
-        this.shSewing=0;
+        this.shSp=0;
         this.shFinishing=0;
         this.unitId={};
         this.unit=new Unit();

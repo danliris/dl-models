@@ -22,7 +22,7 @@ module.exports = function (data) {
     data.should.have.property('operator');
     data.operator.should.be.instanceOf(Number);
 
-    data.should.have.property('workingHours');
+    data.should.have.property('workingCapacities');
     data.workingHours.should.be.instanceOf(Number);
 
     data.should.have.property('ahTotal');

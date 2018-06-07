@@ -2,7 +2,7 @@
 
 var BaseModel = require('model-toolkit').BaseModel;
 
-module.exports = class WorkingHoursStandard extends BaseModel {
+module.exports = class WorkingCapacitiesStandard extends BaseModel {
     constructor(source) {
         super('working-hours-standard', '1.0.0');
 

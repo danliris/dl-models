@@ -14,23 +14,23 @@ module.exports = function (data) {
     data.should.have.property('deliveryDate');
     data.deliveryDate.should.instanceof(Date);
     
-    data.should.have.property('garmentBuyerId');
-    data.garmentBuyerId.should.instanceOf(Object);
+    data.should.have.property('spBuyerId');
+    data.spBuyerId.should.instanceOf(Object);
     
-    data.should.have.property('garmentBuyerName');
-    data.garmentBuyerName.should.be.String();
+    data.should.have.property('spBuyerName');
+    data.spBuyerName.should.be.String();
     
-    data.should.have.property('garmentBuyerCode');
-    data.garmentBuyerCode.should.be.String();
+    data.should.have.property('spBuyerCode');
+    data.spBuyerCode.should.be.String();
 
-    data.should.have.property('garmentSectionId');
-    data.garmentSectionId.should.instanceOf(Object);
+    data.should.have.property('spSectionId');
+    data.spSectionId.should.instanceOf(Object);
     
-    data.should.have.property('garmentSectionName');
-    data.garmentSectionName.should.be.String();
+    data.should.have.property('spSectionName');
+    data.spSectionName.should.be.String();
     
-    data.should.have.property('garmentSectionCode');
-    data.garmentSectionCode.should.be.String();
+    data.should.have.property('spSectionCode');
+    data.spSectionCode.should.be.String();
 
     data.should.have.property('remark');
     data.remark.should.be.String();

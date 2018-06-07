@@ -12,13 +12,13 @@ module.exports = class BookingOrder extends BaseModel {
         this.bookingDate = new Date();
         this.deliveryDate = new Date();
 
-        this.garmentBuyerId={};
-        this.garmentBuyerName='';
-        this.garmentBuyerCode='';
+        this.spBuyerId={};
+        this.spBuyerName='';
+        this.spBuyerCode='';
 
-        this.garmentSectionId={};
-        this.garmentSectionName='';
-        this.garmentSectionCode='';
+        this.spSectionId={};
+        this.spSectionName='';
+        this.spSectionCode='';
 
         this.orderQuantity=0;
         this.remark = '';

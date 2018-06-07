@@ -2,9 +2,9 @@
 var BaseModel = require('model-toolkit').BaseModel;
 
 
-module.exports = class GarmentSection extends BaseModel {
+module.exports = class SpSection extends BaseModel {
     constructor(source, type) {
-        super(type || 'garment-section', '1.0.0');
+        super(type || 'sp-section', '1.0.0');
         this.code = '';
         this.name = '';
         this.remark = '';
