@@ -5,9 +5,9 @@ it("#01. weekly-plan should valid", function () {
     validate.weeklyPlan(new WeeklyPlan());
 });
 
-it("#02. Working Hours Standard should valid", function () {
-    var WorkingHoursStandard = require('../src/sp-master-plan/working-hours-standard');
-    validate.workingHoursStandard(new WorkingHoursStandard());
+it("#02. Working Capacities Standard should valid", function () {
+    var WorkingCapacitiesStandard = require('../src/sp-master-plan/working-capacities-standard');
+    validate.workingCapacitiesStandard(new WorkingCapacitiesStandard());
 });
 
 it("#03. Style should valid", function () {
@@ -15,9 +15,9 @@ it("#03. Style should valid", function () {
     validate.style(new Style());
 });
 
-it("#04. Standard Hour should valid", function () {
-    var StandardHour = require('../src/sp-master-plan/standard-hour');
-    validate.standardHour(new StandardHour());
+it("#04. Standard Capacity should valid", function () {
+    var StandardCapacity = require('../src/sp-master-plan/standard-capacity');
+    validate.standardCapacity(new StandardCapacity());
 });
 
 it("#05. Booking Order should valid", function () {
@@ -30,9 +30,9 @@ it("#06. Master Plan Comodity should valid", function () {
     validate.masterPlanComodity(new MasterPlanComodity());
 });
 
-it("#07. Sewing Blocking Plan should valid", function () {
-    var SewingBlockingPlan = require('../src/sp-master-plan/sewing-blocking-plan');
-    validate.sewingBlockingPlan(new SewingBlockingPlan());
+it("#07. Spinning Plan should valid", function () {
+    var SpinningPlan = require('../src/sp-master-plan/spinning-plan');
+    validate.spinningPlan(new SpinningPlan());
 });
 
 it("#08. Sp Section should valid", function () {

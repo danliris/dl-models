@@ -19,22 +19,22 @@ module.exports = function (data) {
     data.should.have.property('efficiency');
     data.efficiency.should.be.instanceOf(Number);
 
-    data.should.have.property('operator');
+    data.should.have.property('spindle');
     data.operator.should.be.instanceOf(Number);
 
     data.should.have.property('workingCapacities');
-    data.workingHours.should.be.instanceOf(Number);
+    data.workingCapacities.should.be.instanceOf(Number);
 
-    data.should.have.property('ahTotal');
+    data.should.have.property('acTotal');
     data.ahTotal.should.be.instanceOf(Number);
 
-    data.should.have.property('ehTotal');
+    data.should.have.property('ecTotal');
     data.ehTotal.should.be.instanceOf(Number);
 
-    data.should.have.property('usedEH');
+    data.should.have.property('usedEC');
     data.usedEH.should.be.instanceOf(Number);
 
-    data.should.have.property('remainingEH');
+    data.should.have.property('remainingEC');
     data.remainingEH.should.be.instanceOf(Number);
 
 };

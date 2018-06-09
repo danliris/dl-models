@@ -164,8 +164,8 @@ module.exports = {
                 bookingOrder: require('./sp-master-plan/booking-order-validator'),
                 bookingOrderItem: require('./sp-master-plan/booking-order-item-validator'),
                 masterPlanComodity: require('./sp-master-plan/master-plan-comodity-validator'),
-                spBlockingPlan: require('./sp-master-plan/sp-blocking-plan-validator'),
-                spBlockingPlanDetail: require('./sp-master-plan/sp-blocking-plan-detail-validator'),
+                spinningPlan: require('./sp-master-plan/spinning-plan-validator'),
+                spinningPlanDetail: require('./sp-master-plan/spinning-plan-detail-validator'),
                 spSection: require('./sp-master-plan/sp-section-validator'),
         }
 };

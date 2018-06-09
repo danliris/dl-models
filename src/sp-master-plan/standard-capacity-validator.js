@@ -35,13 +35,8 @@ module.exports = function (data) {
     
     data.should.have.property('masterplanComodityCode');
     data.spBuyerCode.should.be.String();
-    
-    data.should.have.property('shCutting');
-    data.shCutting.should.instanceOf(Number);
-    
+        
     data.should.have.property('shSewing');
     data.shSewing.should.instanceOf(Number);
     
-    data.should.have.property('shFinishing');
-    data.shFinishing.should.instanceOf(Number);
 };

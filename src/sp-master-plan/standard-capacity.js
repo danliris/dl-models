@@ -16,9 +16,7 @@ module.exports = class StandardCapacity extends BaseModel {
         this.masterplanComodityId = {};
         this.masterplanComodityName='';
         this.masterplanComodityCode='';
-        this.shCutting = 0;
         this.shSewing = 0;
-        this.shFinishing = 0;
         this.copy(source);
     }
 };

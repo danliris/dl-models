@@ -258,7 +258,7 @@ module.exports = {
             StandardCapacity: 'standard-capacities',
             BookingOrder: 'booking-orders',
             MasterPlanComodity: 'master-plan-comodities',
-            SpBlockingPlan: 'sp-blocking-plans',
+            SpinningPlan: 'spinning-plans',
             SpSection : 'sp-sections',
         }
     }
