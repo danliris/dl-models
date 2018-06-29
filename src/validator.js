@@ -155,5 +155,17 @@ module.exports = {
                 sewingBlockingPlan: require('./garment-master-plan/sewing-blocking-plan-validator'),
                 sewingBlockingPlanDetail: require('./garment-master-plan/sewing-blocking-plan-detail-validator'),
                 garmentSection: require('./garment-master-plan/garment-section-validator'),
+        },
+        spMasterPlan: {
+                // weeklyPlan: require("./garment-master-plan/weekly-plan-validator"),
+                // workingHoursStandard: require('./garment-master-plan/working-hours-standard-validator'),
+                // style: require('./garment-master-plan/style-validator'),
+                standardCapacity: require('./sp-master-plan/standard-capacity-validator'),
+                // bookingOrder: require('./garment-master-plan/booking-order-validator'),
+                // bookingOrderItem: require('./garment-master-plan/booking-order-item-validator'),
+                // masterPlanComodity: require('./garment-master-plan/master-plan-comodity-validator'),
+                // sewingBlockingPlan: require('./garment-master-plan/sewing-blocking-plan-validator'),
+                // sewingBlockingPlanDetail: require('./garment-master-plan/sewing-blocking-plan-detail-validator'),
+                // garmentSection: require('./garment-master-plan/garment-section-validator'),
         }
 };
