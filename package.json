@@ -1,24 +1,69 @@
 {
-  "name": "dl-models",
-  "version": "1.0.0",
-  "description": "Dan Liris Models",
-  "main": "index.js",
-  "scripts": {
-    "test": "mocha test/index.js",
-    "cover": "istanbul cover _mocha",
-    "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls",
-    "codeclimate": "codeclimate-test-reporter < ./coverage/lcov.info"
+  "_args": [
+    [
+      {
+        "raw": "dl-models@git+https://github.com/danliris/dl-models.git#dev",
+        "scope": null,
+        "escapedName": "dl-models",
+        "name": "dl-models",
+        "rawSpec": "git+https://github.com/danliris/dl-models.git#dev",
+        "spec": "git+https://github.com/danliris/dl-models.git#dev",
+        "type": "hosted",
+        "hosted": {
+          "type": "github",
+          "ssh": "git@github.com:danliris/dl-models.git#dev",
+          "sshUrl": "git+ssh://git@github.com/danliris/dl-models.git#dev",
+          "httpsUrl": "git+https://github.com/danliris/dl-models.git#dev",
+          "gitUrl": "git://github.com/danliris/dl-models.git#dev",
+          "shortcut": "github:danliris/dl-models#dev",
+          "directUrl": "https://raw.githubusercontent.com/danliris/dl-models/dev/package.json"
+        }
+      },
+      "E:\\GITHUB\\MasterPlanGmt\\dl-sp-master-plan-webapi\\node_modules\\dl-module"
+    ]
+  ],
+  "_from": "git+https://github.com/danliris/dl-models.git#dev",
+  "_id": "dl-models@1.0.0",
+  "_inCache": true,
+  "_location": "/dl-models",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "dl-models@git+https://github.com/danliris/dl-models.git#dev",
+    "scope": null,
+    "escapedName": "dl-models",
+    "name": "dl-models",
+    "rawSpec": "git+https://github.com/danliris/dl-models.git#dev",
+    "spec": "git+https://github.com/danliris/dl-models.git#dev",
+    "type": "hosted",
+    "hosted": {
+      "type": "github",
+      "ssh": "git@github.com:danliris/dl-models.git#dev",
+      "sshUrl": "git+ssh://git@github.com/danliris/dl-models.git#dev",
+      "httpsUrl": "git+https://github.com/danliris/dl-models.git#dev",
+      "gitUrl": "git://github.com/danliris/dl-models.git#dev",
+      "shortcut": "github:danliris/dl-models#dev",
+      "directUrl": "https://raw.githubusercontent.com/danliris/dl-models/dev/package.json"
+    }
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/danliris/dl-models.git"
+  "_requiredBy": [
+    "/dl-module"
+  ],
+  "_resolved": "git+https://github.com/danliris/dl-models.git#1cefd57c00a63644a3d0d20acc6faa3ff8349ae5",
+  "_shasum": "63e34832d17e32fe2522414b4c9306c4ae1a47fb",
+  "_shrinkwrap": null,
+  "_spec": "dl-models@git+https://github.com/danliris/dl-models.git#dev",
+  "_where": "E:\\GITHUB\\MasterPlanGmt\\dl-sp-master-plan-webapi\\node_modules\\dl-module",
+  "author": {
+    "name": "Moonlay.Tech"
   },
-  "author": "Moonlay.Tech",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/danliris/dl-models/issues"
   },
-  "homepage": "https://github.com/danliris/dl-models#readme",
+  "dependencies": {
+    "model-toolkit": "git+https://github.com/pinkgorilla/model-toolkit.git",
+    "should": "^11.1.2"
+  },
+  "description": "Dan Liris Models",
   "devDependencies": {
     "codeclimate-test-reporter": "^0.4.0",
     "coveralls": "^2.11.15",
@@ -26,8 +71,23 @@
     "mocha": "^3.2.0",
     "mocha-lcov-reporter": "^1.2.0"
   },
-  "dependencies": {
-    "model-toolkit": "git+https://github.com/pinkgorilla/model-toolkit.git",
-    "should": "^11.1.2"
-  }
+  "gitHead": "1cefd57c00a63644a3d0d20acc6faa3ff8349ae5",
+  "homepage": "https://github.com/danliris/dl-models#readme",
+  "license": "MIT",
+  "main": "index.js",
+  "name": "dl-models",
+  "optionalDependencies": {},
+  "readme": "[![Build Status](https://travis-ci.org/danliris/dl-models.svg?branch=master)](https://travis-ci.org/danliris/dl-models)\r\n[![Coverage Status](https://coveralls.io/repos/github/danliris/dl-models/badge.svg?branch=master)](https://coveralls.io/github/danliris/dl-models?branch=master)\r\n[![Code Climate](https://codeclimate.com/github/danliris/dl-models/badges/gpa.svg)](https://codeclimate.com/github/danliris/dl-models)\r\n[![Issue Count](https://codeclimate.com/github/danliris/dl-models/badges/issue_count.svg)](https://codeclimate.com/github/danliris/dl-models)\r\n\r\n# dl-models\r\nDan Liris Models\r\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danliris/dl-models.git"
+  },
+  "scripts": {
+    "codeclimate": "codeclimate-test-reporter < ./coverage/lcov.info",
+    "cover": "istanbul cover _mocha",
+    "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls",
+    "test": "mocha test/index.js"
+  },
+  "version": "1.0.0"
 }
